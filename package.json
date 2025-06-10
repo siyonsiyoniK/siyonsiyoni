@@ -7,9 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pages:build": "npx @cloudflare/next-on-pages",
-    "preview": "pnpm run pages:build && wrangler pages dev",
-    "deploy": "pnpm run pages:build && wrangler pages deploy"
+    "pages:build": "npx @cloudflare/next-on-pages"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",

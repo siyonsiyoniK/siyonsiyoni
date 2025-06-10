@@ -2,7 +2,13 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  // output: 'export' // 주석 처리 또는 제거
+  output: 'standalone',
+  experimental: {
+    serverComponentsExternalPackages: ['@cloudflare/next-on-pages'],
+  },
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;

@@ -1,10 +1,12 @@
 name = "siyonsiyoni"
-compatibility_date = "2023-05-18"
+compatibility_date = "2024-06-10"
 compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".vercel/output/static"
 
 [build]
 command = "pnpm run deploy"
 publish = ".vercel/output/static"
 
 [build.upload]
-format = "service-worker"
+format = "directory"
+dir = ".vercel/output/static"

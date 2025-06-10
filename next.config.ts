@@ -1,12 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
-  },
-  // Optional: Change the output directory to 'out' for static exports
-  distDir: 'out',
+  reactStrictMode: true,
+  // output: 'export' // 주석 처리 또는 제거
 };
 
 export default nextConfig;

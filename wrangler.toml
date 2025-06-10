@@ -1,4 +1,10 @@
 name = "siyonsiyoni"
-main = "./.next/static/chunks/app-pages-internals.js"
 compatibility_date = "2023-05-18"
 compatibility_flags = ["nodejs_compat"]
+
+[build]
+command = "pnpm run deploy"
+publish = ".vercel/output/static"
+
+[build.upload]
+format = "service-worker"

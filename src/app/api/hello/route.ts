@@ -9,9 +9,9 @@ export async function GET() {
     });
     
     // CORS 헤더 추가
-    response.headers.set('Access-Control-Allow-Origin', '*');
-    response.headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-    response.headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    // response.headers.set('Access-Control-Allow-Origin', '*');
+    // response.headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    // response.headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
     
     return response;
   } catch (error) {
@@ -23,10 +23,10 @@ export async function GET() {
   }
 }
 
-export const OPTIONS = async () => {
-  const response = new NextResponse(null, { status: 204 });
-  response.headers.set('Access-Control-Allow-Origin', '*');
-  response.headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-  response.headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-  return response;
-};
+// export const OPTIONS = async () => {
+//   const response = new NextResponse(null, { status: 204 });
+//   response.headers.set('Access-Control-Allow-Origin', '*');
+//   response.headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+//   response.headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+//   return response;
+// };

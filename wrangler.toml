@@ -1,0 +1,4 @@
+name = "siyonsiyoni"
+main = "./.next/static/chunks/app-pages-internals.js"
+compatibility_date = "2023-05-18"
+compatibility_flags = ["nodejs_compat"]

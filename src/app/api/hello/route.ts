@@ -8,11 +8,6 @@ export async function GET() {
       message: '안녕하세요! Next.js API가 정상 작동 중입니다.' 
     });
     
-    // CORS 헤더 추가
-    // response.headers.set('Access-Control-Allow-Origin', '*');
-    // response.headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-    // response.headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-    
     return response;
   } catch (error) {
     console.error('API Error:', error);
@@ -22,11 +17,3 @@ export async function GET() {
     );
   }
 }
-
-// export const OPTIONS = async () => {
-//   const response = new NextResponse(null, { status: 204 });
-//   response.headers.set('Access-Control-Allow-Origin', '*');
-//   response.headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-//   response.headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-//   return response;
-// };

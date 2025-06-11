@@ -28,13 +28,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/" >
               <PawPrint />
             </Link>
-            <Link href="/" className="hover:underline">Judgement Game</Link>
-            <Link href="/about" className="hover:underline">Portfolio</Link>
+            <Link href="judgementGame" className="hover:underline">Judgement Game</Link>
+            <Link href="/" className="hover:underline">Portfolio</Link>
             <Link href="/contact" className="hover:underline">Contact</Link>
           </nav>
         </header>
 
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow flex flex-col">{children}</main>
 
         <footer className="p-4 text-center">
           © 2025
